@@ -1,5 +1,5 @@
-var 
-    $panelAbout = $(".aboutPanel") ,
+var
+    $panelAbout = $(".ca-aboutPanel") ,
     $pnlButton  = $(".panelButton"),
     $body       = $('body')
 
@@ -7,8 +7,8 @@ var
 $(".panelButton").on("click", function(){
     $panelAbout.stop().slideToggle(400, function(){
         $pnlButton.toggleClass("rotated")
-        $body.animate({scrollTop: $("#aboutMe").offset().top}, 1000)
+        $body.animate({scrollTop: $("#ca-aboutMe").offset().top}, 1000)
     })
-    
-    
+
+
 })
