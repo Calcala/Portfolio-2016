@@ -17,10 +17,6 @@ var
     sectionToNavigate
 
 
-
-
-console.log(menuScrollTop)
-
 $window.scroll( showHideMenu )
 $menuIntems.on("click",navigateToSection)
 
@@ -30,7 +26,13 @@ $(".panelButton").on("click", function(){
         $body.animate({scrollTop: $("#aboutMe").offset().top}, 1000,
                             function(){
                                 $sectionNav.stop().fadeIn(600)
-                                menuScrollTop = $body.scrollTop()
+
+                                if($body.scrollTop() == 0){
+                                    menuScrollTop = Number.MAX_VALUE
+                                    showHideMenu()
+                                }else{
+                                    menuScrollTop = $body.scrollTop()
+                                }
                             })
 
     })
@@ -39,7 +41,7 @@ $(".panelButton").on("click", function(){
 
 function showHideMenu (){
     currentScrollTop = $window.scrollTop()
-    if(currentScrollTop < menuScrollTop){
+    if(currentScrollTop < menuScrollTop || currentScrollTop == 0){
         $sectionNav.stop().fadeOut(400)
     }else{
          $sectionNav.stop().fadeIn(600)

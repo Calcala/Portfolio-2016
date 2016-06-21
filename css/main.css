@@ -33,7 +33,6 @@ body{
 .sectionNav {
     height: 50px;
     width:100%;
-    //border-bottom: 1px solid #333;
     text-align: right;
     font-size: 0;
     position: fixed;
@@ -223,8 +222,8 @@ body{
 
 
 /*
-    ABOUT ME 
-                */
+    MAIN SECTION
+                         */
 
 /* Button styles */
 .panelButton {
@@ -281,6 +280,20 @@ body{
     padding: 70px 50px;
     }
 
+.ca-panelSect p{
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+    }
+
+.ca-panelSect h2{
+    font-size: 60px;
+    font-weight: 300;
+    color: #4DB6AC
+    }
+
+
+/* About me section */
 .ca-aboutPanel h2.greeting{
     font-size: 100px;
     font-weight: 700;
@@ -292,20 +305,13 @@ body{
     font-size: 60px;
     }
     .ca-aboutPanel > h3 > span{
-    font-weight: 700;
-
-    }
+        font-weight: 700;
+        }
 
 .ca-aboutPanel h4{
     font-size: 35px;
     color:#666;
-    margin-bottom: 60px;
-    }
-
-.ca-aboutPanel p{
-    font-size: 20px;
-    text-align: left;
-    line-height: 30px;
+    margin-bottom: 70px;
     }
 
 .ca-portrait {
@@ -322,16 +328,19 @@ body{
     vertical-align: top;
     position: relative;
     }
+    .ca-columnP:before {
+        content: '';
+        width: 4px;
+        height: 70px;
+        background-color:  #009688;
+        position: absolute;
+        top: 0;
+        left: -2px;
+        }
 
-.ca-columnP:before {
-    content: '';
-    width: 4px;
-    height: 70px;
-    background-color:  #009688;
-    position: absolute;
-    top: 0;
-    left: -2px;
-    }
+/* Career Section */
+
+
 
 
 
