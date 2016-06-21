@@ -24,6 +24,50 @@ body{
     }
 
 
+
+
+/*
+    NAVIGATION
+                */
+
+.sectionNav {
+    height: 50px;
+    width:100%;
+    //border-bottom: 1px solid #333;
+    text-align: right;
+    font-size: 0;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    display: none;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,.1);
+    z-index: 999;
+    }
+
+.sectionNav li {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+    }
+
+.sectionNav a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-decoration: none;
+    color: #333;
+    transition: color .4s;
+    }
+    .sectionNav a:hover {
+        color: #4DB6AC;
+        }
+
+
+
+
+
 /*
     HERO SECTION
  
@@ -226,15 +270,18 @@ body{
     }
 
 /*Panel styles*/
-.ca-aboutPanel {
-    background-color: #FFFEFD;
-    height: 800px;
+
+.ca-contentGeneral {
+    background-color: #F6F6F6;
     display: none;
     text-align: center;
-    padding: 50px 50px;
     }
 
-.ca-aboutPanel h2{
+.ca-panelSect {
+    padding: 70px 50px;
+    }
+
+.ca-aboutPanel h2.greeting{
     font-size: 100px;
     font-weight: 700;
     margin-bottom: 20px;
@@ -270,11 +317,23 @@ body{
 .ca-columnP {
     display: inline-block;
     width:40%;
-    border-left: 3px solid #4DB6AC;
     padding-left: 20px;
-    margin-left: 10px;
+    margin-left: 20px;
     vertical-align: top;
+    position: relative;
     }
+
+.ca-columnP:before {
+    content: '';
+    width: 4px;
+    height: 70px;
+    background-color:  #009688;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    }
+
+
 
 /*
     FOOTER SECTION
