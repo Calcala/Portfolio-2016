@@ -17,7 +17,7 @@ html {
     }
 
 body{
-    background-color: #EFEBE9;
+    background-color: #FCFEFE;
     font-family: Cairo, Helvetica, Arial, sans-serif;
     color: #212121;
     margin: 0 0 100px; /*Footer margin*/
@@ -271,14 +271,14 @@ body{
 /*Panel styles*/
 
 .ca-contentGeneral {
-    background-color: #F6F6F6;
+    background-color: #E4F4F3;
     display: none;
     text-align: center;
     }
 
 .ca-panelSect {
     padding: 70px 50px;
-    width: 850px;
+    width: 900px;
     margin:0 auto;
     font-size: 0;
     }
@@ -297,20 +297,37 @@ body{
     font-size: 60px;
     font-weight: 300;
     color: #4DB6AC;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     }
 
 .ca-panelSect:not(.ca-aboutPanel) h3{
     font-size: 35px;
+    height: 60px;
+    line-height: 60px;
     font-weight: 300;
-    color: #6D4C41
+    color: #6D4C41;
+    padding-left: 80px;
+    margin-bottom: 30px;
     }
+    #ca-educationTitle {
+        background-image: url(ui-img/education.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+
+    #ca-experienceTitle {
+        background-image: url(ui-img/work.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
 
 
 .ca-column{
     width:50%;
     display: inline-block;
-
+    box-sizing: border-box;
+    padding: 10px;
+    vertical-align: top;
     }
 
 
@@ -332,7 +349,7 @@ body{
 .ca-aboutPanel h4{
     font-size: 35px;
     color:#666;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     }
 
 .ca-portrait {
@@ -361,7 +378,18 @@ body{
 
 /* Career Section */
 
+.ca-careerItem {
+    margin-bottom: 30px;
+    }
 
+.ca-careerItem p {
+    font-size: 16px;
+    color: #333;
+    }
+
+.ca-careerItem h4{
+    font-size: 23px;
+    }
 
 
 
