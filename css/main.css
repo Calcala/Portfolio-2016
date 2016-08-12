@@ -277,9 +277,8 @@ body{
     }
 
 .ca-panelSect {
-    padding: 70px 50px;
+    padding: 90px 90px;
     font-size: 0;
-    width: 1000px;
     margin:0 auto;
     }
 
@@ -290,7 +289,7 @@ body{
 .ca-panelSect p{
     font-size: 20px;
     text-align: left;
-    line-height: 30px;
+    line-height: 1.5;
     }
 
 .ca-panelSect h2{
@@ -326,15 +325,20 @@ body{
     width:50%;
     display: inline-block;
     box-sizing: border-box;
-    padding: 0 40px 0 0;
+    padding: 0 40px;
     vertical-align: top;
     }
-    .ca-column.ca-2colR{
-        text-align: right;
-        }
-    .ca-column.ca-2colL{
-        text-align: left;
-        }
+
+.ca-column .ca-2colR{
+    width:50%;
+    display: inline-block;
+    text-align: right;
+    }
+.ca-column .ca-2colL{
+    width:50%;
+    display: inline-block;
+    text-align: left;
+    }
 
 
 /* About me section */
