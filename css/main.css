@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cairo:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Cairo:100,300,400,700);
 
 
 
@@ -268,6 +268,7 @@ body{
     transform: translate(-50%) rotate(-180deg);
     }
 
+
 /*Panel styles*/
 
 .ca-contentGeneral {
@@ -339,12 +340,23 @@ body{
     display: inline-block;
     text-align: left;
     }
+.ca-column ul{
+    padding: 0 80px;
+    list-style-position: inside;
+    list-style-type: square;
+    }
+
+.ca-column li{
+    font-size: 18px;
+    color: #333;
+    height: 36px;
+    }
 
 
 /* About me section */
 .ca-aboutPanel h2.greeting{
     font-size: 100px;
-    font-weight: 700;
+    font-weight: 300;
     margin-bottom: 20px;
     color: #4DB6AC
     }
@@ -402,6 +414,26 @@ body{
     font-size: 23px;
     margin-bottom: 10px;
     }
+
+
+/*
+    SKILLS SECTION
+
+                    */
+
+#ca-frontendTitle {
+    background-image: url(ui-img/frontend.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+#ca-backendTitle {
+    background-image: url(ui-img/backend.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    }
+
+
 
 
 /*
