@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Cairo:100,300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Lato&subset=latin-ext');
 
 
 
@@ -62,6 +63,11 @@ body{
     .sectionNav a:hover {
         color: #4DB6AC;
         }
+
+.sectionNav .itemSelected {
+    color: #2E9B8F;
+    cursor: default
+}
 
 
 
@@ -278,7 +284,7 @@ body{
     }
 
 .ca-panelSect {
-    padding: 90px 90px;
+    padding: 90px 90px 5px 90px;
     font-size: 0;
     margin:0 auto;
     }
@@ -347,9 +353,10 @@ body{
     }
 
 .ca-column li{
-    font-size: 18px;
+    font-size: 17px;
     color: #333;
     height: 36px;
+    font-family: 'Lato', sans-serif;
     }
 
 
@@ -382,6 +389,7 @@ body{
 
 .ca-columnP {
     display: inline-block;
+    font-family: 'Lato', sans-serif;
     width:60%;
     padding-left: 20px;
     margin-left: 20px;
@@ -408,6 +416,7 @@ body{
 .ca-careerItem p {
     font-size: 16px;
     color: #333;
+    font-family: 'Lato', sans-serif;
     }
 
 .ca-careerItem h4{
