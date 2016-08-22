@@ -23,6 +23,8 @@ var
     OffsetWork
 
 
+generateFlyingWords()
+
 $window.scroll( manageMainMenu )
 $menuItems.on("click",navigateToSection)
 
@@ -92,4 +94,14 @@ function iniatilizeOffset (){
     offsetCareer    = $("#career").offset().top
     offsetSkills    = $("#skills").offset().top
     OffsetWork      = $("#work").offset().top
+}
+
+
+//
+
+function generateFlyingWords () {
+    var skillsList = ["HTML5", "CSS3", "SQL Server", "jQuery", "JavaScript", "Android", "Responsive design", "MySQL", "Java"]
+
+
+
 }

@@ -294,9 +294,10 @@ body{
     }
 
 .ca-panelSect p{
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     line-height: 1.5;
+    font-family: 'Lato', sans-serif;
     }
 
 .ca-panelSect h2{
@@ -361,6 +362,37 @@ body{
 
 
 /* About me section */
+.ca-portraitContainer{
+    margin-bottom: 25px;
+    text-align: center;
+    position:relative;
+    }
+
+.ca-portraitContainer .flyingSkill{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    font-size: 45px;
+    font-weight: 700;
+    animation : fly 6s infinite;
+    color:#009688
+    }
+
+    @keyframes fly{
+            from {
+                transform: scale(1.25);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            to{
+                transform: scale(0.25);
+                opacity: 0;
+            }
+        }
+
+
 .ca-aboutPanel h2.greeting{
     font-size: 100px;
     font-weight: 300;
@@ -386,6 +418,8 @@ body{
     opacity: .3;
     vertical-align: top;
     }
+
+
 
 .ca-columnP {
     display: inline-block;
