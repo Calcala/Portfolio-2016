@@ -3,6 +3,7 @@ var
     $panelContent   = $(".ca-contentGeneral") ,
     $pnlButton      = $(".panelButton"),
     $body           = $('body'),
+    $bodyhtml       = $('html,body'),
     $window         = $(window),
     $sectionNav     = $('.sectionNav'),
     $menuItems      = $('.sectionNav a')
@@ -23,8 +24,6 @@ var
     OffsetWork
 
 
-generateFlyingWords()
-
 $window.scroll( manageMainMenu )
 $menuItems.on("click",navigateToSection)
 
@@ -34,15 +33,15 @@ $(".panelButton").on("click", function(){
         iniatilizeOffset ()
 
         $pnlButton.toggleClass("rotated")
-        $body.animate({scrollTop: $("#aboutMe").offset().top}, 1000,
+        $bodyhtml.animate({scrollTop: $("#aboutMe").offset().top}, 1000,
                             function(){
                                 $sectionNav.stop().fadeIn(600)
 
-                                if($body.scrollTop() == 0){
+                                if($bodyhtml.scrollTop() == 0){
                                     menuScrollTop = Number.MAX_VALUE
                                     showHideMenu()
                                 }else{
-                                    menuScrollTop = $body.scrollTop()
+                                    menuScrollTop = $bodyhtml.scrollTop()
                                 }
                             })
 
@@ -69,7 +68,7 @@ function showHideMenu (){
 function navigateToSection (event) {
     event.preventDefault()
     sectionToNavigate = $(this).attr("href")
-    $body.stop().animate({scrollTop: $(sectionToNavigate).offset().top}, 800)
+    $bodyhtml.stop().animate({scrollTop: $(sectionToNavigate).offset().top}, 800)
 }
 
 function highlightCurrentMenuSection (){
@@ -83,8 +82,8 @@ function highlightCurrentMenuSection (){
    }else if (currentScrollTop >= offsetSkills && currentScrollTop < OffsetWork){
        $menuItems.eq(2).addClass("itemSelected")
 
-   }else if (currentScrollTop >= OffsetWork){
-       $menuItems.eq(3).addClass("itemSelected")
+   //}else if (currentScrollTop >= OffsetWork){
+   //    $menuItems.eq(3).addClass("itemSelected")
    }
 }
 
@@ -93,15 +92,6 @@ function iniatilizeOffset (){
     offsetAboutMe   = $("#aboutMe").offset().top
     offsetCareer    = $("#career").offset().top
     offsetSkills    = $("#skills").offset().top
-    OffsetWork      = $("#work").offset().top
+    //OffsetWork      = $("#work").offset().top
 }
 
-
-//
-
-function generateFlyingWords () {
-    var skillsList = ["HTML5", "CSS3", "SQL Server", "jQuery", "JavaScript", "Android", "Responsive design", "MySQL", "Java"]
-
-
-
-}
