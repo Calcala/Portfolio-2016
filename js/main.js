@@ -27,7 +27,7 @@ var
 $window.scroll( manageMainMenu )
 $menuItems.on("click",navigateToSection)
 
-$(".panelButton").on("click", function(){
+$pnlButton.on("click", function(){
     $panelContent.stop().slideToggle(400, function(){
 
         iniatilizeOffset ()
@@ -79,7 +79,7 @@ function highlightCurrentMenuSection (){
    }else if (currentScrollTop >= offsetCareer && currentScrollTop < offsetSkills){
        $menuItems.eq(1).addClass("itemSelected")
 
-   }else if (currentScrollTop >= offsetSkills && currentScrollTop < OffsetWork){
+   }else if (currentScrollTop >= offsetSkills){
        $menuItems.eq(2).addClass("itemSelected")
 
    //}else if (currentScrollTop >= OffsetWork){

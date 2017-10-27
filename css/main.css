@@ -224,9 +224,6 @@ body{
 
 
 
-
-
-
 /*
     MAIN SECTION
                          */
@@ -287,7 +284,7 @@ body{
     padding: 90px 90px 5px 90px;
     font-size: 0;
     margin:0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 90px;
     }
 
 .ca-panelSect:not(.ca-aboutPanel) {
@@ -313,7 +310,7 @@ body{
     height: 60px;
     line-height: 60px;
     font-weight: 300;
-    color: #6D4C41;
+    color: #866F67;
     padding-left: 80px;
     margin-bottom: 30px;
     }
@@ -332,10 +329,12 @@ body{
 
 .ca-column{
     width:50%;
+    min-width: 500px;
     display: inline-block;
     box-sizing: border-box;
     padding: 0 40px;
     vertical-align: top;
+    margin-bottom: 20px;
     }
 
 .ca-column .ca-2colR{
@@ -400,7 +399,7 @@ body{
 .ca-columnP {
     display: inline-block;
     font-family: 'Lato', sans-serif;
-    width:60%;
+    width:50%;
     padding-left: 20px;
     margin-left: 20px;
     vertical-align: top;
@@ -409,7 +408,7 @@ body{
     .ca-columnP:before {
         content: '';
         width: 4px;
-        height: 70px;
+        height: 60px;
         background-color:  #009688;
         position: absolute;
         top: 0;
@@ -418,6 +417,42 @@ body{
 
 
 /* Career Section */
+
+.ca-careerPanel {
+    background-color: #4E918C;
+    position:relative;
+    }
+    .ca-careerPanel:after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 60px;
+        bottom: -40px;
+        left: 0;
+        background-color: #4E918C;
+        transform: skewY(1deg);
+        z-index: 1;
+        }
+
+    .ca-careerPanel:before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 60px;
+        top: -40px;
+        left: 0;
+        background-color: #4E918C;
+        transform: skewY(1deg);
+        z-index: 1;
+        }
+
+    .ca-careerPanel h2{
+        color: #E4F4F3
+        }
+
+
 
 .ca-careerItem {
     margin-bottom: 30px;
@@ -441,7 +476,7 @@ body{
                     */
 
 .ca-skillsPanel{
-    padding-bottom: 120px
+    padding-bottom: 220px
     }
 
 #ca-frontendTitle {
