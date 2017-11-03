@@ -399,7 +399,7 @@ body{
 .ca-columnP {
     display: inline-block;
     font-family: 'Lato', sans-serif;
-    width:50%;
+    width:60%;
     padding-left: 20px;
     margin-left: 20px;
     vertical-align: top;
@@ -452,6 +452,9 @@ body{
         color: #E4F4F3
         }
 
+.ca-careerPanel .ca-column h3 {
+    color:#E4F4F3
+    }
 
 
 .ca-careerItem {
@@ -460,13 +463,14 @@ body{
 
 .ca-careerItem p {
     font-size: 16px;
-    color: #333;
+    color: #BBDEDB;
     font-family: 'Lato', sans-serif;
     }
 
 .ca-careerItem h4{
     font-size: 23px;
     margin-bottom: 10px;
+    color:#E4F4F3
     }
 
 
