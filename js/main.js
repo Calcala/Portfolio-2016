@@ -6,7 +6,10 @@ var
     $bodyhtml       = $('html,body'),
     $window         = $(window),
     $sectionNav     = $('.sectionNav'),
-    $menuItems      = $('.sectionNav a')
+    $menuItems      = $('.sectionNav a'),
+    $menuListItems  = $('.sectionNav li:not(first-child)'),
+    $menuButton     = $('.sectionNav li:first-child')
+
 
 
 //Global variables
@@ -14,7 +17,7 @@ var
     menuScrollTop   = Number.MAX_VALUE, // Initialize as MAX value in order to not show the menu when the panel is opening
 
     currentScrollTop,
-    isPanelVisible  = false,
+    isListVisible  = false,
     sectionToNavigate,
 
     //Next four variables will store the offset top for each section on the web
@@ -26,6 +29,7 @@ var
 
 $window.scroll( manageMainMenu )
 $menuItems.on("click",navigateToSection)
+$menuButton.on("click",showHideList)
 
 $pnlButton.on("click", function(){
     $panelContent.stop().slideToggle(400, function(){
@@ -62,6 +66,16 @@ function showHideMenu (){
         $sectionNav.stop().fadeOut(400)
     }else{
         $sectionNav.stop().fadeIn(600)
+    }
+}
+
+function showHideList (){
+    if(isListVisible){
+       
+        isListVisible  = false
+    }else{
+        
+        isListVisible  = true
     }
 }
 

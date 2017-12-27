@@ -70,7 +70,11 @@ p{
 .sectionNav .itemSelected {
     color: #2E9B8F;
     cursor: default
-}
+    }
+
+.sectionNav li:first-child  {
+    display: none;
+    }
 
 
 
@@ -562,7 +566,7 @@ p{
     
     
     .sectionNav {
-        height: 150px;
+        height: auto;
         }
     
     .sectionNav li {
@@ -573,6 +577,18 @@ p{
         text-align: center;
         font-size: 18px;
         line-height: 50px;
+        }
+    
+    .sectionNav li:first-child  {
+        display: block;
+        background-image: url(ui-img/menu.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: auto;
+        }
+    
+    .sectionNavResponsive li:not(first-child){
+        //display: none;
         }
 
     .ca-portraitContainer{
