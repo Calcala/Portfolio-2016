@@ -6,9 +6,9 @@ var
     $bodyhtml       = $('html,body'),
     $window         = $(window),
     $sectionNav     = $('.sectionNav'),
-    $menuItems      = $('.sectionNav a'),
-    $menuListItems  = $('.sectionNav li:not(first-child)'),
-    $menuButton     = $('.sectionNav li:first-child')
+    $menuItems      = $('.sectionNav ul a'),
+    $menuList       = $('.sectionNav ul'),
+    $menuButton     = $('#iconMenu')
 
 
 
@@ -70,19 +70,15 @@ function showHideMenu (){
 }
 
 function showHideList (){
-    if(isListVisible){
-       
-        isListVisible  = false
-    }else{
-        
-        isListVisible  = true
-    }
+   $menuList.toggleClass( "visible" )
 }
 
 function navigateToSection (event) {
     event.preventDefault()
     sectionToNavigate = $(this).attr("href")
     $bodyhtml.stop().animate({scrollTop: $(sectionToNavigate).offset().top}, 800)
+    $menuList.toggleClass( "visible" )
+    
 }
 
 function highlightCurrentMenuSection (){
